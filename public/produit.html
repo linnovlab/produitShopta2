@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Produit</title>
+</head>
+<body>
+    <header class="h-[12rem] bg-black">
+    </header>
+
+    <main class="main-produit font-lato text-black">
+        <section class=" desktop-width ">
+            <div class="content flex gap-4 m-8">
+                <div class="left">
+                    <div class="img">
+                        <img src="./img/prod img.png" alt="produit" class="max-w-[590px] w-full">
+                    </div>
+                </div>
+                <!--  -->
+                <div class="right max-w-[654px] w-full">
+                    <h1 class="font-semibold text-[26px] text-b_light">Biscotti 40% HHC+CBD</h1>
+                    <div class="avis">
+                        <p class="font-medium flex gap-1 items-center">
+                            <span>4,1</span>
+                            <i class="fas fa-star text-[#DFC26E]"></i>
+                            <span class="italic border-b border-black">10 avis</span>
+                        </p>
+                    </div>
+                    <p class="font-semibold text-[32px] mt-2">11,90€</p>
+                    <p class="text-[10px] font-semibold">Taxes incluses. <a href="#" class="text-g_light border-b border-g_light">Frais d'expédition</a> calculés à l'étape de paiement.</p>
+                    <div class="desc my-4">
+                        <p>
+                            Produite dans les laboratoires Français à partir de fleurs de culture indoor de Suisse. Si vous êtes à la recherche de fleur aux saveurs et goûts délicieux de biscuit, La fleur HHC 40% Biscotti est faite pour vous !
+                        </p>
+                    </div>
+                    <div class="grammes">
+                        <h4 class="font-medium">Prix dégréssif selon la quantité</h4>
+                        <div class="content">
+                            <ul id="grammes" class="flex gap-3 flex-wrap">
+                                <li>
+                                    <a href="#" class="btn-gr active">1 <span class="sm:block hidden"> gramme</span> <span class="sm:hidden block"> gr</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-gr">2 <span class="sm:block hidden"> gramme</span> <span class="sm:hidden block">gr</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-gr">4 <span class="sm:block hidden">gramme</span> <span class="sm:hidden block">gr</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-gr">6 <span class="sm:block hidden">gramme</span> <span class="sm:hidden block">gr</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-gr">10 <span class="sm:block hidden">gramme</span> <span class="sm:hidden block">gr</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-gr">20 <span class="sm:block hidden">gramme</span> <span class="sm:hidden block">gr</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="flex gap-4 mt-4">
+                        <form action="#" >
+                            <p class="text-center font-medium">Quantité</p>
+                            <div class="item flex items-center">
+                                <button type="button" id="down">-</button>
+                                <input type="number" name="qty" id="input-command" min="1" max="30" value="1">
+                                <button type="button" id="up">+</button>
+                            </div>
+                        </form>
+                        <div class="btns">
+                            <button type="button" class="btn-command text-g_light border-g_light">Ajouter au panier</button>
+                            <button type="button" class="btn-command text-white border-black bg-black mt-3">Acheter maintenant</button>
+                        </div>
+                    </div>
+                    <div class="desc mt-4">
+                        <h5 class="text-b_light">Click & Collect disponible à SHOPTACBD PARIS 10 et PARIS 13</h5>
+                        <p class="text-[#4F4F4F]">Habituellement prêt en 10 minutes</p>
+                        <p class="text-[#4F4F4F]">
+                            <a href="#" class="border-b border-[#4F4F4F] hover:text-black">Vérifier la disponibilité dans d'autres boutiques</a>
+                        </p>
+                    </div> 
+                    <div class="accordions p-8 border border-black mt-5">
+                        <div class="accordion-item w-full mx-auto my-2">
+                            <button type="button" id="btn-accordion" class="border-b border-gray-300 pb-2 text-start px-4 font-bold flex justify-between w-full">
+                                <span class="flex gap-2">
+                                    <svg class="icon icon-accordion color-foreground-accent-2 fill-[#DFC26E]" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M18.6307 0.0851008C18.9214 0.143319 19.2573 0.251631 19.499 0.483071C19.7487 0.722288 19.8616 1.06444 19.9202 1.35568C19.9821 1.66275 20.0008 2.00418 20 2.32523C19.9986 2.89096 19.9355 3.45932 19.9011 3.76888C19.8965 3.81064 19.8924 3.8477 19.889 3.8794L19.8885 3.88469C19.7574 5.00604 19.5546 6.53586 19.2559 8.16345C18.9577 9.77538 18.5618 11.5447 18.0423 13.1175L18.0415 13.1198C17.54 14.6143 16.835 16.2292 15.7876 17.2779C12.1807 20.8897 6.31722 20.917 2.70668 17.3017C-0.903844 13.6864 -0.876728 7.8151 2.73025 4.20335C3.77726 3.15495 5.37751 2.44898 6.88416 1.94609L6.88527 1.94573C8.4557 1.42559 10.21 1.02928 11.8328 0.73059C13.4582 0.431407 14.986 0.228254 16.1059 0.097027L16.1111 0.0964089C16.1231 0.0951308 16.1358 0.0937998 16.1492 0.09237C16.4416 0.0610531 17.0517 -0.0042707 17.6652 0.000220251C17.9855 0.00256445 18.3248 0.0238389 18.6307 0.0851008ZM16.2207 1.10269C15.114 1.23241 13.6107 1.4325 12.0155 1.72612C10.4166 2.02043 8.71247 2.40674 7.20334 2.90653C5.72522 3.39993 4.31684 4.04614 3.44505 4.91909C0.229287 8.13911 0.209266 13.3695 3.42148 16.5859C6.63368 19.8024 11.8571 19.7822 15.0728 16.5622C15.9442 15.6897 16.5895 14.2687 17.0829 12.7984C17.5818 11.2879 17.9676 9.5703 18.2616 7.98044C18.5549 6.38318 18.7546 4.8779 18.8841 3.76969C18.8878 3.73473 18.8921 3.69563 18.8969 3.65288C18.9315 3.33899 18.9879 2.82875 18.9891 2.32275C18.9898 2.03445 18.9722 1.76875 18.9293 1.5558C18.8832 1.32703 18.8229 1.23626 18.8002 1.21454C18.7694 1.18504 18.6656 1.12434 18.4325 1.07766C18.2146 1.03402 17.9461 1.01452 17.6578 1.01241C17.1035 1.00835 16.5429 1.06826 16.2505 1.09951C16.2402 1.10061 16.2303 1.10167 16.2207 1.10269Z"></path>
+                                        <path d="M19.4297 0.501734C19.6261 0.7004 19.6244 1.02084 19.426 1.21747L0.860985 19.6161C0.662582 19.8127 0.342561 19.811 0.146198 19.6124C-0.0501654 19.4137 -0.0485124 19.0933 0.14989 18.8966L18.7149 0.498038C18.9133 0.301414 19.2334 0.303069 19.4297 0.501734Z"></path>
+                                        <path d="M5.62257 2.4772H6.12801V13.6663H17.3961V14.1724H5.62257V2.4772Z"></path>
+                                        <path d="M10.1879 1.18752H10.6933L10.6933 9.14731H18.7842V9.65342H10.1879L10.1879 1.18752Z"></path>
+                                    </svg>
+                                    <span>Caractéristique du produit</span>
+                                </span>
+                                <i class="fas fa-chevron-down transition-transform duration-500"></i>
+                            </button>
+                            <div class="panel px-4 pt-2 hidden">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, libero.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item w-full mx-auto my-2">
+                            <button type="button" id="btn-accordion" class="border-b border-gray-300 pb-2 text-start px-4 font-bold flex justify-between w-full">
+                                <span class="flex gap-2">
+                                    <svg class="icon icon-accordion color-foreground-accent-2 fill-[#DFC26E]" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M5.80023 10.2433C5.80023 9.691 6.24795 9.24329 6.80023 9.24329C7.35252 9.24329 7.80023 9.691 7.80023 10.2433C7.80023 10.7956 7.35252 11.2433 6.80023 11.2433C6.24795 11.2433 5.80023 10.7956 5.80023 10.2433Z"></path>
+                                        <path d="M9.22974 10.2433C9.22974 9.691 9.67745 9.24329 10.2297 9.24329C10.782 9.24329 11.2297 9.691 11.2297 10.2433C11.2297 10.7956 10.782 11.2433 10.2297 11.2433C9.67745 11.2433 9.22974 10.7956 9.22974 10.2433Z"></path>
+                                        <path d="M12.6592 10.2433C12.6592 9.691 13.1069 9.24329 13.6592 9.24329C14.2115 9.24329 14.6592 9.691 14.6592 10.2433C14.6592 10.7956 14.2115 11.2433 13.6592 11.2433C13.1069 11.2433 12.6592 10.7956 12.6592 10.2433Z"></path>
+                                        <path d="M16.6445 17.2036C16.6418 17.2023 16.6392 17.2009 16.6365 17.1996C16.3947 17.0764 16.1302 16.9257 15.8701 16.7774C15.2251 16.4099 14.607 16.0576 14.4279 16.1795C13.2314 16.9937 11.7861 17.4696 10.2297 17.4696C6.10323 17.4696 2.75806 14.1244 2.75806 9.99791C2.75806 5.87142 6.10323 2.52625 10.2297 2.52625C14.3562 2.52625 17.7014 5.87142 17.7014 9.99791C17.7014 11.512 17.251 12.9209 16.477 14.0979C16.3445 14.2994 16.6705 14.9403 17.0113 15.6104C17.1583 15.8994 17.308 16.1938 17.4249 16.4607C17.4269 16.4653 17.4289 16.4697 17.4308 16.4742C17.6237 16.9172 17.7239 17.2824 17.5671 17.418C17.4394 17.5544 17.0791 17.4243 16.6445 17.2036ZM18.2593 18.14C17.8792 18.5115 17.4018 18.4853 17.2128 18.461C16.9786 18.4309 16.7562 18.3504 16.587 18.2799C16.2391 18.1348 15.8412 17.9114 15.506 17.7209C15.4611 17.6954 15.4172 17.6704 15.3743 17.6459C15.0837 17.4804 14.8356 17.3391 14.6299 17.2385C13.347 18.0196 11.8396 18.4696 10.2297 18.4696C5.55095 18.4696 1.75806 14.6767 1.75806 9.99791C1.75806 5.31914 5.55095 1.52625 10.2297 1.52625C14.9085 1.52625 18.7014 5.31914 18.7014 9.99791C18.7014 11.5821 18.2656 13.0672 17.5072 14.3369C17.5098 14.3432 17.5125 14.3497 17.5153 14.3564C17.6071 14.5755 17.7411 14.8392 17.8997 15.1513C17.927 15.2049 17.9549 15.2599 17.9835 15.3164C18.1621 15.6689 18.3719 16.0905 18.5003 16.4618C18.5631 16.6435 18.6314 16.8815 18.6427 17.1309C18.6529 17.3561 18.6228 17.7987 18.2593 18.14Z" fill-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Conseils d'utilisations</span>
+                                </span>
+                                <i class="fas fa-chevron-down transition-transform duration-500"></i>
+                            </button>
+                            <div class="panel px-4 pt-2 hidden">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, libero.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item w-full mx-auto my-2">
+                            <button type="button" id="btn-accordion" class="border-b border-gray-300 pb-2 text-start px-4 font-bold flex justify-between w-full">
+                                <span class="flex gap-2">
+                                    <svg class="icon icon-accordion color-foreground-accent-2 fill-[#DFC26E]" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M0 3.75156C0 3.47454 0.224196 3.24997 0.500755 3.24997H10.647C10.9235 3.24997 11.1477 3.47454 11.1477 3.75156V5.07505V5.63362V6.10938V13.6616C10.9427 14.0067 10.8813 14.1101 10.5516 14.6648L7.22339 14.6646V13.6614H10.1462V4.25316H1.00151V13.6614H2.6842V14.6646H0.500755C0.224196 14.6646 0 14.44 0 14.163V3.75156Z"></path>
+                                        <path d="M18.9985 8.08376L11.1477 6.10938V5.07505L19.6212 7.20603C19.8439 7.26203 20 7.46255 20 7.69253V14.1631C20 14.4401 19.7758 14.6647 19.4992 14.6647H17.3071V13.6615H18.9985V8.08376ZM11.1477 13.6616L13.3442 13.6615L13.3443 14.6647L10.5516 14.6648L11.1477 13.6616Z"></path>
+                                        <path d="M7.71269 14.1854C7.71269 15.6018 6.56643 16.75 5.15245 16.75C3.73847 16.75 2.59221 15.6018 2.59221 14.1854C2.59221 12.7691 3.73847 11.6209 5.15245 11.6209C6.56643 11.6209 7.71269 12.7691 7.71269 14.1854ZM5.15245 15.7468C6.01331 15.7468 6.71118 15.0478 6.71118 14.1854C6.71118 13.3231 6.01331 12.6241 5.15245 12.6241C4.29159 12.6241 3.59372 13.3231 3.59372 14.1854C3.59372 15.0478 4.29159 15.7468 5.15245 15.7468Z"></path>
+                                        <path d="M17.5196 14.1854C17.5196 15.6018 16.3733 16.75 14.9593 16.75C13.5454 16.75 12.3991 15.6018 12.3991 14.1854C12.3991 12.7691 13.5454 11.6209 14.9593 11.6209C16.3733 11.6209 17.5196 12.7691 17.5196 14.1854ZM14.9593 15.7468C15.8202 15.7468 16.5181 15.0478 16.5181 14.1854C16.5181 13.3231 15.8202 12.6241 14.9593 12.6241C14.0985 12.6241 13.4006 13.3231 13.4006 14.1854C13.4006 15.0478 14.0985 15.7468 14.9593 15.7468Z"></path>
+                                    </svg>
+                                    <span>Livraison</span>
+                                </span>
+                                <i class="fas fa-chevron-down transition-transform duration-500"></i>
+                            </button>
+                            <div class="panel px-4 pt-2 hidden">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, libero.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item w-full mx-auto my-2">
+                            <button type="button" id="btn-accordion" class="border-b border-gray-300 pb-2 text-start px-4 font-bold flex justify-between w-full">
+                                <span class="flex gap-2">
+                                    <svg class="icon icon-accordion color-foreground-accent-2 fill-[#DFC26E]" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M16.5 7.11819H3.5L3.5 18.9997L16.5 18.9997V7.11819ZM3.5 6.11786C2.94772 6.11786 2.5 6.56573 2.5 7.11819V18.9997C2.5 19.5521 2.94772 20 3.5 20H16.5C17.0523 20 17.5 19.5521 17.5 18.9997V7.11819C17.5 6.56572 17.0523 6.11786 16.5 6.11786H3.5Z" fill-rule="evenodd"></path>
+                                        <path d="M11.443 11.9199C11.443 12.7406 10.797 13.406 10.0001 13.406C9.20314 13.406 8.55712 12.7406 8.55712 11.9199C8.55712 11.0992 9.20314 10.4338 10.0001 10.4338C10.797 10.4338 11.443 11.0992 11.443 11.9199Z"></path>
+                                        <path d="M10.0187 11.9202C10.3639 11.9202 10.6437 12.2001 10.6437 12.5454V15.6971C10.6437 16.0424 10.3639 16.3223 10.0187 16.3223C9.67354 16.3223 9.39372 16.0424 9.39372 15.6971V12.5454C9.39372 12.2001 9.67354 11.9202 10.0187 11.9202Z"></path>
+                                        <path d="M6.2417 3.75956C6.2417 1.68321 7.92435 0 10 0C12.0757 0 13.7583 1.68321 13.7583 3.75956V6.12135H12.7583V3.75956C12.7583 2.23568 11.5234 1.00033 10 1.00033C8.47663 1.00033 7.2417 2.23568 7.2417 3.75956V6.12135H6.2417V3.75956Z"></path>
+                                    </svg>
+                                    <span>Mentions légal</span>
+                                </span>
+                                <i class="fas fa-chevron-down transition-transform duration-500"></i>
+                            </button>
+                            <div class="panel px-4 pt-2 hidden">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, libero.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="others">
+                <h4 class="font-semibold text-[36px] text-center mb-3">VOUS AIMEREZ AUSSI</h4>
+                <div class="items text-b_light flex gap-4">
+                    <div class="item max-w-[300px] w-full">
+                        <div class="img">
+                            <img src="./img/item.png" alt="produi">
+                        </div>
+                        <div class="desc">
+                            <p class="text-[22px] font-semibold">Gelato HHCP 7%</p>
+                            <p class="font-bold text-lg">13,90€ - 11,00€/g </p>
+                            <p class="font-medium flex gap-1 items-center">
+                                <span>4,5</span>
+                                <i class="fas fa-star text-[#DFC26E]"></i>
+                                <span class="italic border-b border-black">8 avis</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item max-w-[300px] w-full">
+                        <div class="img">
+                            <img src="./img/promotion.png" alt="produi">
+                        </div>
+                        <div class="desc">
+                            <p class="text-[22px] font-semibold">Pack Shoptapromotion - CBD, CBG, HHC, HHCP...</p>
+                            <p class="font-bold text-lg">7,00€ - 6,00€/g </p>
+                            <p class="font-medium flex gap-1 items-center">
+                                <span>4,5</span>
+                                <i class="fas fa-star text-[#DFC26E]"></i>
+                                <span class="italic border-b border-black">8 avis</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="desc-prod mt-4">
+                <h4 class="font-semibold text-[26px] text-b_light text-center mb-4">DESCRIPTION DÉTAILLÉE</h4>
+                <div class="content "> <!-- max-h-[83px] h-full overflow-x-hidden overflow-y-scroll -->
+                    <p>
+                        Fleur de 40% HHC + 10% CBD Biscotti
+                        Shoptacbd, <a href="#" class="border-b border-[#4F4F4F] hover:text-black">votre spécialiste européen du HHC</a>, vous propose la fleur de HHC Biscotti au taux de 40 HHC + 10% CBD. Produite dans les laboratoires Français à partir de fleurs de culture indoor de Suisse. Si vous êtes à la recherche de fleur aux saveurs et goûts délicieux de biscuit, elle est faite pour vous !
+                        Conditionnement: 1, 2, 4, 6, 10 ou 20 grammes
+                        Saveurs: Cookies - Fruitée - Citron
+                        Caractéristiques: La molécule HHC au taux de 40% que contient la fleur peut la rendre très collante.
+                        Attention : Consommer par petite dose. Les effets sont très puissants.
+                        Comment est produit la molécule HHC?
+                        La texture de la fleur HHC Biscotti est collante du fait de sa synthèse de molécule HHC à un taux exceptionnellement élevé (40%).
+                        Cette molécule un peu particulière a été ainsi obtenue grâce à l’hydrogénation d’une molécule synthétique de THC. La structure moléculaire reste ainsi sensiblement la même : la structure moléculaire du HHC possède la même base que le THC à la différence des 2 atomes de carbone venus s’ajouter…
+                        Cependant, cette transformation ne peut être faite que dans un laboratoire et s’avère dangereuse car elle comporte des risques d’explosion. Il n’est donc pas possible d’en fabriquer chez soi. Le HHC est donc une molécule de synthèse qui, même si elle existe depuis les années 40, s’avère encore peu connue et surtout peu étudiée.
+                        Quels sont les bienfaits du HHC?
+                        Si l’hexahydrocannabinol (HHC) ressemble au THC dans sa structure, il lui ressemble également dans les effets.
+                        Le HHC est un mélange de 2 molécules de type HCR : le 9R HHC qui est capable d’interagir avec nos récepteurs endocannabinoïdes et le 9S HHC qui n’a que peu d’incidence sur notre système endocannabinoïde.
+                        Parmi les bienfaits reportés, on observe un effet antistress, reposant il stimule l’appétit, boost le métabolisme et apaise l’esprit.
+                        Vous l’aurez compris, le HHC est donc un produit puissant qui serait intéressant pour arrêter le cannabis en douceur par exemple.
+                        Pour plus de renseignement, RDV sur l'article suivant le HHC et ses effets.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="h-[15rem] bg-black">
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

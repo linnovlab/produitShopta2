@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --b_light: #1C1C1C;
+    --g_light: #357106;
+}
+.desktop-width{
+    @apply max-w-[1440px];
+}
+@media screen and (min-width: 1440px) {
+    .desktop-width{
+        @apply mx-auto;
+    }
+}
+
+.btn-gr{
+    @apply flex gap-2 justify-center items-center w-[112px] h-[49px] border border-g_light text-g_light rounded-lg;
+}
+.btn-command{
+    @apply outline-none max-w-[388px] w-full h-[58px] border rounded-[5px] tracking-wider font-medium;
+}
+
+/* produit css */
+#grammes a.active{
+    background-color: var(--b_light);
+    border-color: var(--g_light);
+    color: white;
+}
+#grammes a{
+    transition: all .4s;
+}
+#grammes a:hover{
+    background-color: var(--b_light);
+    border-color: var(--g_light);
+    color: white;
+}
+
+/* command section */
+#input-command{
+    width: 7rem;
+    padding: 5px 0;
+    font-weight: 600;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    outline: none;
+    text-align: center;
+}
+#input-command::-webkit-inner-spin-button,
+#input-command::-webkit-outer-spin-button{
+    appearance: none;
+    -webkit-appearance: none;
+}
+#down{
+    color: white;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+    background-color: black;
+    padding: 6px 8px;
+}
+#up{
+    font-weight: 700;
+    color: white;
+    border: 1px solid black;
+    border-radius: 0 5px 5px 0;
+    background-color: black;
+    padding: 6px 8px;
+}
+
+/* accordions */
+#btn-accordion.active > i{
+    transform: rotate(180deg);
+}
+  

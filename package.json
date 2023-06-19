@@ -1,0 +1,11 @@
+{
+  "name": "innovlab-shoptacbd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "start-tailwind": "npx tailwindcss -i ./input.css -o ./public/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
