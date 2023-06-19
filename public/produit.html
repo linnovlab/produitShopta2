@@ -13,7 +13,7 @@
 
     <main class="main-produit font-lato text-black">
         <section class=" desktop-width ">
-            <div class="content flex gap-4 m-8">
+            <div class="prod-content flex gap-4 m-8">
                 <div class="left">
                     <div class="img">
                         <img src="./img/prod img.png" alt="produit" class="max-w-[590px] w-full">
@@ -29,9 +29,14 @@
                             <span class="italic border-b border-black">10 avis</span>
                         </p>
                     </div>
-                    <p class="font-semibold text-[32px] mt-2">11,90€</p>
+
+                    <div class="price-content flex">
+                        <span class="dashed active">59,00</span>
+                        <p id="price" class="font-semibold text-[32px] mt-2 active">11,90€</p>
+                        <span class="soit active">Soit 10,95€/gr</span>
+                    </div>
                     <p class="text-[10px] font-semibold">Taxes incluses. <a href="#" class="text-g_light border-b border-g_light">Frais d'expédition</a> calculés à l'étape de paiement.</p>
-                    <div class="desc my-4">
+                    <div class="desc-1 my-4">
                         <p>
                             Produite dans les laboratoires Français à partir de fleurs de culture indoor de Suisse. Si vous êtes à la recherche de fleur aux saveurs et goûts délicieux de biscuit, La fleur HHC 40% Biscotti est faite pour vous !
                         </p>
@@ -53,37 +58,46 @@
                                     <a href="#" class="btn-gr">6 <span class="sm:block hidden">gramme</span> <span class="sm:hidden block">gr</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="btn-gr">10 <span class="sm:block hidden">gramme</span> <span class="sm:hidden block">gr</span></a>
+                                    <a href="#" class="btn-gr disabled">10 <span class="sm:block hidden">gramme</span> <span class="sm:hidden block">gr</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="btn-gr">20 <span class="sm:block hidden">gramme</span> <span class="sm:hidden block">gr</span></a>
+                                    <a href="#" class="btn-gr disabled">20 <span class="sm:block hidden">gramme</span> <span class="sm:hidden block">gr</span></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
     
-                    <div class="flex gap-4 mt-4">
-                        <form action="#" >
-                            <p class="text-center font-medium">Quantité</p>
-                            <div class="item flex items-center">
-                                <button type="button" id="down">-</button>
-                                <input type="number" name="qty" id="input-command" min="1" max="30" value="1">
-                                <button type="button" id="up">+</button>
+                    <div class="mt-4">
+                        <p class="font-medium qty-text qty-text">Quantité</p>
+                        <form action="#" id="form-command" class="flex">
+                            <div class="item flex">
+                                <div class="sm-qty">
+                                    <p class="font-medium">Quantité</p>
+                                </div>
+                                <div class="btns flex">
+                                    <button type="button" id="down">-</button>
+                                    <input type="number" name="qty" id="input-command" min="1" max="30" value="1">
+                                    <button type="button" id="up">+</button>
+                                </div>
+                            </div>
+                            <div id="btns-acives" class="active">
+                                <button id="ajouter-panier" type="button" class="btn-command text-g_light border-g_light">Ajouter au panier</button>
+                                <button id="acheter" type="button" class="btn-command text-white border-black bg-black mt-3">Acheter maintenant</button>
+                            </div>
+                            <div id="btns-epuiser" class="">
+                                <button id="epuiser" type="button" class="btn-command text-g_light border-g_light">Épuisé</button>
+                                <button id="me-prevenir" type="button" class="btn-command text-white border-black bg-black mt-3">Me prévenir</button>
                             </div>
                         </form>
-                        <div class="btns">
-                            <button type="button" class="btn-command text-g_light border-g_light">Ajouter au panier</button>
-                            <button type="button" class="btn-command text-white border-black bg-black mt-3">Acheter maintenant</button>
-                        </div>
                     </div>
-                    <div class="desc mt-4">
+                    <div class="desc-2 mt-4">
                         <h5 class="text-b_light">Click & Collect disponible à SHOPTACBD PARIS 10 et PARIS 13</h5>
                         <p class="text-[#4F4F4F]">Habituellement prêt en 10 minutes</p>
                         <p class="text-[#4F4F4F]">
                             <a href="#" class="border-b border-[#4F4F4F] hover:text-black">Vérifier la disponibilité dans d'autres boutiques</a>
                         </p>
                     </div> 
-                    <div class="accordions p-8 border border-black mt-5">
+                    <div class="accordions py-8 px-[7rem] border border-black mt-5">
                         <div class="accordion-item w-full mx-auto my-2">
                             <button type="button" id="btn-accordion" class="border-b border-gray-300 pb-2 text-start px-4 font-bold flex justify-between w-full">
                                 <span class="flex gap-2">
@@ -152,16 +166,16 @@
                 </div>
             </div>
 
-            <div class="others">
+            <div id="others">
                 <h4 class="font-semibold text-[36px] text-center mb-3">VOUS AIMEREZ AUSSI</h4>
-                <div class="items text-b_light flex gap-4">
+                <div class="items text-b_light">
                     <div class="item max-w-[300px] w-full">
                         <div class="img">
                             <img src="./img/item.png" alt="produi">
                         </div>
                         <div class="desc">
-                            <p class="text-[22px] font-semibold">Gelato HHCP 7%</p>
-                            <p class="font-bold text-lg">13,90€ - 11,00€/g </p>
+                            <h5 class="text-[22px] font-semibold">Gelato HHCP 7%</h5>
+                            <h6 class="font-bold text-lg">13,90€ - 11,00€/g </h6>
                             <p class="font-medium flex gap-1 items-center">
                                 <span>4,5</span>
                                 <i class="fas fa-star text-[#DFC26E]"></i>
@@ -174,8 +188,36 @@
                             <img src="./img/promotion.png" alt="produi">
                         </div>
                         <div class="desc">
-                            <p class="text-[22px] font-semibold">Pack Shoptapromotion - CBD, CBG, HHC, HHCP...</p>
-                            <p class="font-bold text-lg">7,00€ - 6,00€/g </p>
+                            <h5 class="text-[22px] font-semibold">Pack Shoptapromotion - CBD, CBG, HHC, HHCP...</h5>
+                            <h6 class="font-bold text-lg">7,00€ - 6,00€/g </h6>
+                            <p class="font-medium flex gap-1 items-center">
+                                <span>4,5</span>
+                                <i class="fas fa-star text-[#DFC26E]"></i>
+                                <span class="italic border-b border-black">8 avis</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item max-w-[300px] w-full">
+                        <div class="img">
+                            <img src="./img/item.png" alt="produi">
+                        </div>
+                        <div class="desc">
+                            <h5 class="text-[22px] font-semibold">Gelato HHCP 7%</h5>
+                            <h6 class="font-bold text-lg">13,90€ - 11,00€/g </h6>
+                            <p class="font-medium flex gap-1 items-center">
+                                <span>4,5</span>
+                                <i class="fas fa-star text-[#DFC26E]"></i>
+                                <span class="italic border-b border-black">8 avis</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item max-w-[300px] w-full">
+                        <div class="img">
+                            <img src="./img/promotion.png" alt="produi">
+                        </div>
+                        <div class="desc">
+                            <h5 class="text-[22px] font-semibold">Pack Shoptapromotion - CBD, CBG, HHC, HHCP...</h5>
+                            <h6 class="font-bold text-lg">7,00€ - 6,00€/g </h6>
                             <p class="font-medium flex gap-1 items-center">
                                 <span>4,5</span>
                                 <i class="fas fa-star text-[#DFC26E]"></i>
@@ -188,9 +230,9 @@
 
             <div class="desc-prod mt-4">
                 <h4 class="font-semibold text-[26px] text-b_light text-center mb-4">DESCRIPTION DÉTAILLÉE</h4>
-                <div class="content "> <!-- max-h-[83px] h-full overflow-x-hidden overflow-y-scroll -->
+                <div class="content scrolbar-thin"> <!-- max-h-[83px] h-full overflow-x-hidden overflow-y-scroll -->
                     <p>
-                        Fleur de 40% HHC + 10% CBD Biscotti
+                        Fleur de 40% HHC + 10% CBD Biscotti <br>
                         Shoptacbd, <a href="#" class="border-b border-[#4F4F4F] hover:text-black">votre spécialiste européen du HHC</a>, vous propose la fleur de HHC Biscotti au taux de 40 HHC + 10% CBD. Produite dans les laboratoires Français à partir de fleurs de culture indoor de Suisse. Si vous êtes à la recherche de fleur aux saveurs et goûts délicieux de biscuit, elle est faite pour vous !
                         Conditionnement: 1, 2, 4, 6, 10 ou 20 grammes
                         Saveurs: Cookies - Fruitée - Citron
